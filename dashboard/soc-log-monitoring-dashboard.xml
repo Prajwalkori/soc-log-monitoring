@@ -1,0 +1,67 @@
+<dashboard version="1.1" theme="dark">
+  <label>SOC Log Monitoring and Threat Detection</label>
+  <description>
+    Authentication abuse, web enumeration, high-volume traffic, and reconnaissance activity
+    derived from centralized sample log data.
+  </description>
+
+  <!-- ROW 1: ACTIVE ATTACKS -->
+  <row>
+    <panel>
+      <title>SSH Brute Force — Top Attacking IPs</title>
+      <chart>
+        <search ref="SSH Brute Force Detection"/>
+        <option name="charting.chart">bar</option>
+        <option name="charting.axisTitleX.text">Failed Attempts</option>
+        <option name="charting.axisTitleY.text">Source IP</option>
+        <option name="charting.axisY.scale">log</option>
+        <option name="charting.seriesColors">["#ff4d4d"]</option>
+        <option name="charting.legend.placement">none</option>
+        <option name="charting.drilldown">none</option>
+      </chart>
+    </panel>
+
+    <panel>
+      <title>Web Directory Enumeration (404 Abuse)</title>
+      <chart>
+        <search ref="Web Directory Enumeration (404 Abuse)"/>
+        <option name="charting.chart">column</option>
+        <option name="charting.axisTitleX.text">Client IP</option>
+        <option name="charting.axisTitleY.text">404 Hits</option>
+        <option name="charting.axisY.scale">log</option>
+        <option name="charting.seriesColors">["#ff66cc"]</option>
+        <option name="charting.legend.placement">none</option>
+        <option name="charting.drilldown">none</option>
+      </chart>
+    </panel>
+  </row>
+
+  <!-- ROW 2: RECON & VOLUME -->
+  <row>
+    <panel>
+      <title>High Request Volume by Source IP</title>
+      <chart>
+        <search ref="High Request Volume by Source IP"/>
+        <option name="charting.chart">bar</option>
+        <option name="charting.axisTitleX.text">Total Requests</option>
+        <option name="charting.axisTitleY.text">Source IP</option>
+        <option name="charting.seriesColors">["#ff9933"]</option>
+        <option name="charting.legend.placement">none</option>
+        <option name="charting.drilldown">none</option>
+      </chart>
+    </panel>
+
+    <panel>
+      <title>robots.txt Recon Activity</title>
+      <chart>
+        <search ref="robots.txt Recon Activity"/>
+        <option name="charting.chart">area</option>
+        <option name="charting.axisTitleX.text">Source IP</option>
+        <option name="charting.axisTitleY.text">Requests</option>
+        <option name="charting.seriesColors">["#33d6c9"]</option>
+        <option name="charting.legend.placement">none</option>
+        <option name="charting.drilldown">none</option>
+      </chart>
+    </panel>
+  </row>
+</dashboard>
