@@ -5,7 +5,7 @@ This project intentionally focuses on **monitoring and visualization**, not aler
 ---
 ## 📷 Dashboard Preview
 
-![SOC Log Monitoring Dashboard](screenshots/overiview.png)
+![SOC Log Monitoring Dashboard](screenshots/overview.png)
 --
 ## 🎯 Objective
 To design a clean, SOC-style dashboard that helps an analyst quickly answer:
