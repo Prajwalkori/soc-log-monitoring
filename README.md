@@ -3,6 +3,10 @@ A Splunk-based SOC monitoring dashboard focused on **log visibility and analyst-
 The project demonstrates how centralized logs can be used to identify suspicious patterns related to authentication abuse, web reconnaissance, and abnormal traffic behavior.
 This project intentionally focuses on **monitoring and visualization**, not alerting or automated response.
 ---
+## 📷 Dashboard Preview
+
+![SOC Log Monitoring Dashboard](screenshots/dashboardimage.png)
+
 ## 🎯 Objective
 To design a clean, SOC-style dashboard that helps an analyst quickly answer:
 - Who is attempting repeated authentication failures?
