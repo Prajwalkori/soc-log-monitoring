@@ -6,7 +6,7 @@ This project intentionally focuses on **monitoring and visualization**, not aler
 ## 📷 Dashboard Preview
 
 ![SOC Log Monitoring Dashboard](screenshots/overiview.png)
-
+--
 ## 🎯 Objective
 To design a clean, SOC-style dashboard that helps an analyst quickly answer:
 - Who is attempting repeated authentication failures?
